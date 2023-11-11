@@ -1,0 +1,212 @@
+@media screen and (max-width: 480px) {
+html {
+    font-size: 22px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.flex-conteiner {
+    display: grid;
+    grid-template-rows: 100px 2fr 1fr;
+}
+
+.flex-conteiner-header {
+    grid-row: 1/2;
+    align-items:center;
+    text-align: center;
+    align-items: center;
+    background: grey;
+    padding: 30px;
+    margin: 0;
+}
+
+.flex-conteiner-main {
+    display: grid;
+    grid-row: 2/3;
+    background: beige;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.flex-conteiner-content__main-part {
+    display: grid;
+    grid-row: 2/3;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.flex-conteiner-content__bottom-part {
+    display: grid;
+    grid-row: 3/4;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+}
+.flex-conteiner-content__bottom-part2 {
+    display: grid;
+    grid-row: 4/5;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+}
+.flex-conteiner-content__bottom-part3 {
+    display:grid;
+    grid-row: 5/6;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.flex-conteiner-aside {
+    display: grid;
+    background: aquamarine;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    align-items:center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.flex-conteiner-footer {
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background: grey;
+    height: 100%;
+}
+
+.flex-conteiner-footer > div {
+    display: grid;
+    background: lightgray;
+    align-items:center;
+    text-align: center;
+    height: 70%;
+    width: 90%;
+    margin: 15px auto 15px auto;
+}
+}
+@media screen and (min-width: 481px) {
+    html {
+        font-size: 22px;
+        height: 100%;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    .flex-conteiner {
+        display: grid;
+        grid-template-rows: 80px 1fr;
+        height: 500px;
+    }
+    
+    .flex-conteiner-header {
+        display: grid;
+        flex: 0 1 100px;
+        justify-content: center;
+        align-items: center;
+        background: grey;
+    }
+    
+    .flex-conteiner-main {
+        display: grid;
+        background: beige;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    .flex-conteiner-aside {
+        display: grid;
+        background: aquamarine;
+        grid-row: 1/4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        align-items:normal;
+        text-align: center;
+        padding-top: 8%;
+    }
+
+    .flex-conteiner-content__main-part {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .flex-conteiner-content__bottom-part {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-items: center;
+        text-align: center;
+        background-color: bisque;
+        width: 95%;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .flex-conteiner-content__bottom-part2 {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-items: center;
+        text-align: center;
+        background-color: bisque;
+        width: 95%;
+        height: 80%;
+        margin: 0 auto;
+    }
+    .flex-conteiner-content__bottom-part3 {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 3/4;
+        align-items: center;
+        text-align: center;
+        background-color: bisque;
+        width: 97.5%;
+        height: 80%;
+        margin: 0 auto;
+    }
+        
+    .flex-conteiner-footer {
+        display: grid;
+        background: grey;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    
+    .flex-conteiner-footer > div {
+        display: grid;
+        background: lightgray;
+        align-items:center;
+        text-align: center;
+        height: 70%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
